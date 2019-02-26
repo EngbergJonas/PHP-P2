@@ -1,0 +1,6 @@
+orange: #bd7255;
+dark-green: #2c4549;
+super-drak-green: #00322b;
+light-beige (on rock): #dbb6b0;
+light-gray (sky): #e3dadb;
+

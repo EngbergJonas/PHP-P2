@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Roboto");
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif !important;
+  color: #173c44;
+}
+
+.navbar-toggler {
+  background-color: #e3dadb;
+}
+
+.navbar {
+  padding: 0.8rem;
+  background-color: #042525;
+}
+
+.navbar-nav li {
+  padding-right: 15px;
+}
+
+.nav-link {
+  font-size: 1.1em !important;
+  color: #e3dadb !important;
+}
+
+.nav-link:hover {
+  color: #556469 !important;
+}
+
+.navbar-brand {
+  color: #e3dadb !important;
+  font-family: "Lato", sans-serif;
+  font-size: 24px !important;
+}
+.navbar-brand:hover {
+  color: #556469 !important;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 70%;
+  transform: translateY(-50%);
+  font-family: "Indie Flower", cursive !important;
+}
+
+.carousel-caption h1 {
+  font-size: 200%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 10px #042525;
+}
+
+.carousel-caption h3 {
+  font-size: 100%;
+  font-weight: 300;
+  text-shadow: 1px 1px 10px #042525;
+  padding-bottom: 1rem;
+}
+
+.btn-outline-light:hover {
+  background-color: #9799a2;
+  opacity: 0.5;
+  color: #9799a2;
+}
+
+.btn-outline-secondary {
+  color: #e3dadb !important;
+  border-color: #e3dadb !important;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #2c484a;
+  opacity: 0.9;
+  color: #2c484a;
+}
+
+.btn-primary {
+  color: #e3dadb;
+  background-color: transparent;
+  border-color: #e3dadb;
+}
+.btn-primary:hover {
+  color: #e3dadb !important;
+  background-color: #9799a2;
+  border-color: #e3dadb;
+}
+
+.jumbotron {
+  background-color: #042525;
+  border-radius: 0;
+  color: #e3dadb !important;
+  padding: 1rem;
+}
+
+.padding {
+  padding-bottom: 1rem;
+}
+
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.welcome hr {
+  border-top: 2px solid #556469;
+  width: 95%;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  color: #173c44;
+}
+
+.create {
+  color: #e3dadb;
+}
+
+.create:hover {
+  color: #556469;
+}
+
+.far,
+.fas {
+  color: #173c44;
+  font-size: 3em;
+  margin: 1rem;
+}
+
+.card {
+  border-bottom-left-radius: 20px;
+}
+
+.card-body {
+  color: white;
+  background-color: #173c44;
+  border-bottom-left-radius: 20px;
+}
+
+.social a {
+  padding: 2rem;
+  font-size: 4.5em;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-instagram  {
+  color: #517fa4 !important;
+}
+
+.fa-linkedin-in {
+  color: #4875b4 !important;
+}
+
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-linkedin-in:hover {
+  color: #556469;
+}
+
+footer {
+  background-color: #042525;
+  color: #e3dadb;
+  padding: 1rem;
+  width: 100%;
+}
+
+a {
+  color: #e3dadb !important;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.a-dark {
+  color: #173c44 !important;
+}
+.register-link {
+  color: #173c44 !important;
+}
+
+hr.light {
+  border-top: 1px solid #e3dadb;
+  width: 70%;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.my-4 {
+  width: 97%;
+  background-color: #2c484a;
+}
+
+.btn-dark {
+  background-color: #556469 !important;
+  border-color: #556469 !important;
+}
+
+.img-fluid {
+  border-radius: 2rem;
+}
+/*---Media Queries---*/
+/*1:20:81*/
+@media (max-width: 992px) {
+  .social a {
+    font-size: 4em;
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 200%;
+  }
+  .social a {
+    font-size: 2.5em;
+    padding: 1.2rem;
+  }
+}
+@media (max-width: 576px) {
+  .carousel-indicators {
+    display: none;
+  }
+  .display-4 {
+    font-size: 160%;
+  }
+  .social a {
+    font-size: 2em;
+    padding: 0.7rem;
+  }
+}
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0 !important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url("img/bridge.jpg");
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+  padding: 1rem;
+}
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
